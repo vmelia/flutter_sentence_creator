@@ -30,8 +30,6 @@ class SentenceCreatorPage extends StatelessWidget {
             ),
             Container(
               padding: EdgeInsets.all(15.0),
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
               child: Consumer<SentenceCreatorViewModel>(
                 builder: (_, vm, __) => Text(
                   vm.sentence,
