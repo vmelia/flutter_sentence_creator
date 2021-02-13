@@ -1,7 +1,7 @@
-import 'package:flutter_sentence_creator/contracts/sentence_provider_interface.dart';
+import 'package:flutter_sentence_creator/contracts/sentence_provider.dart';
 import 'package:http/http.dart' as http;
 
-class SentenceProviderService implements SentenceProviderInterface {
+class HttpSentenceProvider implements SentenceProvider {
   final String url =
       'http://themicropub.azurewebsites.net/api/SentenceGenerator/Generate';
 
